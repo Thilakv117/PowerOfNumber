@@ -1,0 +1,18 @@
+import java.util.Scanner;
+class Main
+{
+  public static void main(String args[])
+  {
+    Scanner sc = new Scanner(System.in);
+    System.out.print("Enter the base Num: ");
+    int base = sc.nextInt();
+    System.out.print("Enter the Exponent Num: ");
+    int exponent = sc.nextInt();
+    int result = 1;
+    for(int i = exponent;i>0;i--)
+    {
+      result = result * base;
+    }
+     System.out.print(result);
+  }
+}
